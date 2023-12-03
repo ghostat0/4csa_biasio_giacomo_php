@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $password_inserita = $_POST["pass"];
   $password_corretta = "info2023";
 
-  if ($password_inserita === $password_corretta) {?>
+  if ($password_inserita === $password_corretta) {
+    echo "<body style='backgrund-color:" . $_POST["colore"] . ";'>"?>
   <div class="container min-vh-100 d-flex justify-content-center align-items-center">
   <h1>Password CORRETTA!Ecco i dati:</h1>
 </div> 
